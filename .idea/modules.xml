@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NewRefresh/NewRefresh.iml" filepath="$PROJECT_DIR$/NewRefresh/NewRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZJgaokao.iml" filepath="$PROJECT_DIR$/ZJgaokao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gaussianblur/gaussianblur.iml" filepath="$PROJECT_DIR$/gaussianblur/gaussianblur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdsoftware/jdsoftware.iml" filepath="$PROJECT_DIR$/jdsoftware/jdsoftware.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myLibrary/myLibrary.iml" filepath="$PROJECT_DIR$/myLibrary/myLibrary.iml" />
+    </modules>
+  </component>
+</project>

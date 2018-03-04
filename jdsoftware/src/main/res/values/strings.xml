@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">高考报考宝典</string>
+
+    <!-- main -->
+    <string name="name_1">首页</string>
+    <string name="name_2">我的</string>
+
+    <!-- loading -->
+    <string name="warning">志愿查询购买说明：每个购买账号包含永久且唯一（仅限此账号对应学生查询）
+        查询功能,购买即可解锁在志愿参考板查询对应账号完整版志愿参考。</string>
+    <string name="loading_normal">请稍候&#8230;</string>
+    <string name="loading_more_normal">正在加载&#8230;</string>
+    <string name="exit_by_back_again">再次点击返回键退出程序！</string>
+    <string name="errcode_network_data">数据有误</string>
+    <string name="errcode_network_unavailable">网络错误，请稍后重试</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+</resources>

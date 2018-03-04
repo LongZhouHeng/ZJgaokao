@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_share"
+    >
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar_result_1" >
+    </include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请设置您的登录密码"
+        android:paddingTop="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:textSize="@dimen/text_size_20"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText,SpUsage" />
+    <RelativeLayout
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_ont"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#7b7979"
+            android:drawableLeft="@drawable/pic_password"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/text_size_16"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_ont"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:textSize="@dimen/text_size_16"
+            android:inputType="textPassword"
+            android:lines="11"
+            android:hint="请输入密码"
+            android:maxLength="11"
+            android:layout_marginLeft="10dp"
+            tools:ignore="HardcodedText,LabelFor,RtlHardcoded,SpUsage,TextFields" />
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+    <RelativeLayout
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_ont1"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#7b7979"
+            android:drawableLeft="@drawable/pic_ensure"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/text_size_16"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+        <EditText
+            android:id="@+id/et_pwdensure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_ont1"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:textSize="@dimen/text_size_16"
+            android:inputType="textPassword"
+            android:lines="11"
+            android:hint="请确认密码"
+            android:maxLength="11"
+            android:layout_marginLeft="10dp"
+            tools:ignore="HardcodedText,LabelFor,RtlHardcoded,SpUsage,TextFields" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+    <RelativeLayout
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_ont2"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#7b7979"
+            android:drawableLeft="@drawable/pic_message"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/text_size_16"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+        <EditText
+            android:id="@+id/et_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_ont2"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:textSize="@dimen/text_size_16"
+            android:inputType="number"
+            android:lines="11"
+            android:hint="请输入邀请码(非必填)"
+            android:maxLength="11"
+            android:layout_marginLeft="10dp"
+            tools:ignore="HardcodedText,LabelFor,RtlHardcoded,SpUsage,TextFields" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+    <Button
+        android:id="@+id/btn_register_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="下一步"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_full"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar1_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/btn_back_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/title_bar1_height"
+                android:background="@null"
+                android:scaleType="center"
+                android:onClick="btn_back_1"
+                android:paddingEnd="15dp"
+                android:drawableLeft="@drawable/pic_back"
+                android:text=""
+                android:gravity="center"
+                android:textSize="16dp"
+                tools:ignore="RtlHardcoded,RtlSymmetry"
+                android:paddingStart="15dp"
+                />
+            <TextView
+                android:id="@+id/tv_seach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="@dimen/text_size_12"
+                android:hint="搜学校/查专业"
+                android:drawableLeft="@drawable/pic_search"
+                android:gravity="center_vertical"
+                android:textColor="@color/grey"
+                android:layout_centerVertical="true"
+                android:paddingStart="10dp"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:background="@drawable/bg_et_full"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud"
+    >
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" >
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.hzjd.software.gaokao.view.ImageViewCanvas
+            android:id="@+id/me_bag_imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/pic_tou"
+            app:border_color="#EBEBEB"
+            app:border_width="2dp"
+            android:layout_marginBottom="5dp"
+            />
+        <LinearLayout
+            android:id="@+id/rl_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/me_bag_imageView"
+            android:layout_marginStart="20dp"
+            tools:ignore="RtlHardcoded,UseCompoundDrawables">
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/pic_share"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="分享"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="1dp"
+                tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_name_11"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/me_bag_imageView"
+            android:layout_centerHorizontal="true"
+            android:text="        "
+            android:textColor="#555555"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+       <RelativeLayout
+        android:id="@+id/share_extend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_my_redord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/pic_extend"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_my_redord"
+            android:text="分享推广"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_next_1"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_aboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/pic_team"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_aboutus"
+            android:text="关于我们"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_next_1"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_loginout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:text="退出登录"
+        android:textColor="@color/praise"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+</LinearLayout>

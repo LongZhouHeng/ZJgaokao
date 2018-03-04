@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_share_1"
+        android:paddingBottom="20dp"
+        >
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <include
+            android:id="@+id/title_bar"
+            layout="@layout/title_bar_result_1" >
+        </include>
+
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_1"
+            tools:ignore="ObsoleteLayoutParam,UselessLeaf"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            >
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/pic_rank"
+                android:gravity="center"
+                tools:ignore="UselessParent">
+                <LinearLayout
+                    android:id="@+id/ll_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="     "
+                        tools:ignore="HardcodedText"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分"
+                        android:textSize="16sp"
+                        android:layout_gravity="bottom"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_4"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全省第"
+                        tools:ignore="HardcodedText"
+                        android:textSize="16sp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="     "
+                        tools:ignore="HardcodedText,RtlHardcoded"
+                        android:textSize="16sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="名"
+                        tools:ignore="HardcodedText,RtlHardcoded"
+                        android:textSize="16sp"
+                        />
+                </LinearLayout>
+                <View
+                    android:id="@+id/v_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/bg_dotted_line"
+                    android:layerType="software"
+                    android:layout_below="@+id/ll_5"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginTop="10dp"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_redactgrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击编辑分数"
+                    android:padding="10dp"
+                    android:layout_below="@+id/v_1"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_primary"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        >
+        <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请选择报考批次"
+            tools:ignore="HardcodedText"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tv_redact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击选择"
+            tools:ignore="HardcodedText"
+            android:textSize="14sp"
+            android:textColor="@color/text_color_primary"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_grey"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        >
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请选择考生类别"
+            tools:ignore="HardcodedText"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击选择"
+            tools:ignore="HardcodedText"
+            android:textSize="14sp"
+            android:textColor="@color/text_color_primary"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_grey"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_satart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/pic_complete"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="注：提交后分数及名次填写不可更改"
+            android:textColor="@color/praise"
+            android:textSize="10dp"
+            tools:ignore="HardcodedText,SpUsage" />
+    </RelativeLayout>
+</LinearLayout>

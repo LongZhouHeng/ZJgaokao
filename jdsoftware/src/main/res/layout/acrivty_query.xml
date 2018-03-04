@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar_1" >
+    </include>
+   <View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tv_seach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/text_size_16"
+            android:hint="搜学校/查专业"
+            android:drawableLeft="@drawable/pic_search"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey"
+            android:paddingStart="10dp"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:background="@drawable/bg_et_full"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_academy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="院校"
+                android:textColor="@color/grey"
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐"
+                android:textColor="@color/grey"
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专业"
+                android:textColor="@color/grey"
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_lastyear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/grey"
+            android:gravity="center"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <com.cjj.MaterialRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:progress_colors="@array/material_colors"
+            app:progress_size_type="normal"
+            app:wave_height_type="normal"
+            app:wave_color="#FFFAFAFA"
+            app:progress_show_circle_backgroud="true"
+            app:overlay="false"
+            app:wave_show="true"
+            app:progress_backgroud_color="#FFFAFAFA"
+            app:progress_show_arrow="true"
+            >
+            <ListView
+                android:id="@+id/lv"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/app_background_color"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none"
+                >
+            </ListView>
+
+        </com.cjj.MaterialRefreshLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_buy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pic_gaosi"
+            android:alpha="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/ll_aacdmy1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_academys"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="中国科技大学"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/tv_majors"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="生物工程"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+                <TextView
+                    android:id="@+id/tv_score1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="670"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:id="@+id/ll_aacdmy2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_academys1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="中国科技大学"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/tv_majors1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="生物工程"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+                <TextView
+                    android:id="@+id/tv_score11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="670"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:id="@+id/ll_aacdmy3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_academys2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="中国科技大学"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/tv_majors2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="生物工程"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+                <TextView
+                    android:id="@+id/tv_score12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="670"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pic_openkey"
+                tools:ignore="ContentDescription"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                />
+
+            <Button
+                android:id="@+id/btn_openkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="功能全解锁"
+                android:background="@drawable/bg_button3_full"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
